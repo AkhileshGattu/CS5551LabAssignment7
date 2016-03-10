@@ -2,7 +2,7 @@ var loginapp = angular.module("login",[]);
 loginapp.controller('LoginController',['$scope','$location','$http', function ($scope, $location,$http) {
         $scope.login = function (username, password) {
             console.log(username);
-            var url = "http://localhost:8080/MongoRestServiceExample/restService/user";
+            var url = "http://localhost:8080/LabAssignment7/assignment/getuser";
             //Read the database to check for the user.
             var res = $http.get(url+"?name="+username+"&password="+password);
 

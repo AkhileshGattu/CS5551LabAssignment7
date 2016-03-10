@@ -18,7 +18,7 @@ import com.mongodb.WriteResult;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-@Path("/user")
+@Path("/getuser")
 public class UserDetails extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	public UserDetails() {

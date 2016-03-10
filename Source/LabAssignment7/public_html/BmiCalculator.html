@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>BMI Calculator</title>
+    <style>
+        
+        #htmlbody{
+                position: absolute;
+                top: 10px;
+                left: 320px;
+                right: -40px;
+                bottom: -40px;
+                width: auto;
+                height: auto;
+                background-image: url(Background.jpg);
+                background-size: cover;
+                -webkit-filter: blur(0px);
+                z-index: 0;
+            }
+            #tablebody
+            {
+                position:absolute;
+                top:50%;
+                left: 20%;
+            }
+            #tablestyle
+            {
+                height: 50%;
+            }
+    </style>
+</head>
+<body id="htmlbody">
+    <div>
+        <button id="Deactivate" onclick="window.location='Deactivate.html'" style="position: absolute; right: 100%">DeActivateAccount</button>
+   
+        <button id="Profile" onclick="window.location='Profile.html'" style="position: absolute; right:10%;">ChangePassword</button>
+    </div>
+    <div id="tablestyle">
+        <table style="position: absolute; top: 40%; right:50%;" id="tablebody">
+            <caption style="color: white"><h2>BMI Calculator</h2></caption>
+    <tr>
+        <td>Weight:</td>
+        <td><input type="text" name="weight" id="Weight"/></td>
+    </tr>
+    <tr>
+        <td>Height:</td>
+        <td><input type="text" name="height" id="Height"/></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="http://localhost:8080/LabAssignment6/lab/bmicalculator/bmi/1.65/68"><button>Calculate BMI</button></a></td>
+    </tr>
+</table>
+    </div>
+</body>
+</html>
